@@ -15,7 +15,7 @@ variable "amazon_side_asn" {
 }
 
 variable "subnet_ids" {
-  type = list[string]
+  type = list(string)
   default = []
 }
 
@@ -24,7 +24,7 @@ variable "vpc_id" {
 }
 
 variable "resource_share_accounts" {
-  type = list[string]
+  type = list(string)
   default = []
 }
 
