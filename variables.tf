@@ -32,3 +32,24 @@ variable "additional_tags" {
   default = {}
   type    = map(string)
 }
+
+variable "region" {
+  type = string
+}
+
+variable "name" {
+  default = "vpc"
+  type    = string
+}
+
+variable "namespace" {
+  type = string
+}
+
+variable "env" {
+  type = string
+}
+
+variable "owner" {
+  type = string
+}
