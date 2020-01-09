@@ -1,7 +1,7 @@
 resource "aws_ec2_transit_gateway" "tgw" {
   description       = var.description
   amazon_side_asn   = var.amazon_side_asn
-  tags              = merge(local.base_tags, var.additional_tags)
+  tags              = var.tags
 }
 
 resource "aws_ec2_transit_gateway_vpc_attachment" "tgw_attach" {
@@ -14,7 +14,7 @@ resource "aws_ram_resource_share" "tgw_share" {
   count                     = length(var.resource_share_accounts) > 0 ? 1 : 0
   name                      = "${var.name}-tgw-share"
   allow_external_principals = false
-  tags                      = merge(local.base_tags, var.additional_tags)
+  tags                      = var.tags
 }
 
 resource "aws_ram_principal_association" "tgw_ram_principal" {
