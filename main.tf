@@ -1,7 +1,9 @@
 resource "aws_ec2_transit_gateway" "tgw" {
-  description     = var.description
   amazon_side_asn = var.amazon_side_asn
-  tags            = var.tags
+  description     = var.description
+  tags = merge(var.tags, {
+    "Name" = var.name
+  })
 }
 
 resource "aws_ec2_transit_gateway_vpc_attachment" "tgw_attach" {
