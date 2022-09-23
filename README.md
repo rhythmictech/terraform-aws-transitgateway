@@ -43,6 +43,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_allow_external_principals"></a> [allow\_external\_principals](#input\_allow\_external\_principals) | Allow resources to be shared outside of your AWS org | `bool` | `false` | no |
 | <a name="input_amazon_side_asn"></a> [amazon\_side\_asn](#input\_amazon\_side\_asn) | Amazon Side ASN | `number` | n/a | yes |
 | <a name="input_description"></a> [description](#input\_description) | Description used in Transit Gateway | `string` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | Name of transit gateway and related resources | `string` | `"tgw"` | no |
