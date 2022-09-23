@@ -1,4 +1,10 @@
 
+variable "allow_external_principals" {
+  default     = false
+  description = "Allow resources to be shared outside of your AWS org"
+  type        = bool
+}
+
 variable "amazon_side_asn" {
   description = "Amazon Side ASN"
   type        = number
