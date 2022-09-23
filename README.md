@@ -1,5 +1,4 @@
 # terraform-aws-transitgateway
-[![](https://github.com/rhythmictech/terraform-aws-transitgateway/workflows/check/badge.svg)](https://github.com/rhythmictech/terraform-aws-transitgateway/actions)
 
 Manage a [Transit Gateway](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html). Supports using Resource Access Manager to share a Transit Gateway across multiple accounts.
 
