@@ -1,6 +1,7 @@
 resource "aws_ec2_transit_gateway" "tgw" {
-  amazon_side_asn = var.amazon_side_asn
-  description     = var.description
+  amazon_side_asn                    = var.amazon_side_asn
+  description                        = var.description
+  security_group_referencing_support = var.security_group_referencing_support
   tags = merge(var.tags, {
     "Name" = var.name
   })

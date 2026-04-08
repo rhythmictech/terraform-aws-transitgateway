@@ -39,6 +39,12 @@ variable "tags" {
   type        = map(string)
 }
 
+variable "security_group_referencing_support" {
+  default     = "disable"
+  description = "Whether Security Group Referencing Support is enabled on the transit gateway. Valid values: enable, disable"
+  type        = string
+}
+
 variable "vpc_id" {
   description = "VPC to create transit gateway in"
   type        = string
